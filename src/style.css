@@ -1,0 +1,363 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans JP',
+    sans-serif;
+
+}
+
+/*Header*/
+header {
+    height: 60px;
+    background: #0e1116;
+    display: flex;
+    padding: 0 40px 0 5px;
+    font-size: 15px;
+
+}
+
+
+
+.nav-toggle {
+    margin-left: auto;
+    color: #F8F7FF;
+    background: none;
+    border: none;
+    font-size: 25px;
+
+    display: none;
+    cursor: pointer;
+
+}
+
+.logoC {
+
+    padding: 0 10px 0 10px;
+    padding-left: 10px;
+    float: right;
+    width: 65px;
+    
+}
+
+
+
+/* ==== Menu ==== */
+#menu {
+    margin-left: auto;
+    position: relative;
+
+}
+
+#menu ul li {
+    display: inline-block;
+}
+
+#menu ul li a {
+    display: inline-block;
+    position: relative;
+    color: #fff;
+    text-decoration: none;
+    line-height: 60px;
+    padding: 0 10px;
+    margin-right: 10px;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+.inicio {
+    margin-right: 10px;
+    margin-bottom: 5px;
+}
+.register{
+    margin-bottom: 5px;
+    
+}
+
+#menu ul li a:hover {
+    background: #7a36e2;
+    border-radius: 10px;
+
+}
+
+
+
+.show {
+    height: 305px !important;
+}
+
+@media screen and (max-width: 700px) {
+    .nav-toggle {
+        display: block;
+
+    }
+
+    .inicio{
+         margin-top: 20px;
+         margin-left: 100px;
+    }
+
+    .register {
+         margin-top: 20px;
+         margin-left: 1px;
+         margin-bottom: 0px;
+    }
+    
+
+    #menu {
+        background: #0E1116;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        
+        width: 100%;
+        height: 0;
+        
+        overflow: hidden;
+        transition: all 0.32s ease-in-out 0s;
+    }
+
+    #menu ul li {
+        display: block;
+        text-align:center;
+        padding-right: 35px;
+        
+    }
+
+    #menu ul li a {
+        color: #fff;
+        font-size: 15px; 
+        width: 100%;
+
+    }
+
+    #menu ul li a:hover {
+        background: #7a36e2;
+    }
+
+    img {
+        display: block;
+        margin: auto;
+    }
+}
+
+/* CAROUSEL*/
+
+.full-width {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.ShowBox {
+    opacity: 1 !important;
+    pointer-events: auto !important;
+}
+
+.formated-section {
+    padding: 60px 0;
+}
+
+.font-oswald {
+    font-family: 'OswaldRegular';
+}
+
+/*=========== Barra de navegacion ===*/
+.NavBarP,
+.NavBarP-Logo,
+.NavBarP-Nav,
+.NavBarP-Nav>ul,
+.NavBarP-Nav>ul>li,
+.NavBarP-Nav>ul>li>a {
+    height: 50px;
+    line-height: 50px;
+}
+
+.NavBarP {
+    background-color: #141414;
+    color: #fff;
+    position: relative;
+    font-family: 'RobotoCondensedLight';
+    text-transform: uppercase;
+    font-size: 18px;
+    text-align: center;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+}
+
+.NavBarP-Logo,
+.NavBarP-Nav {
+    position: absolute;
+    top: 0;
+    background-color: #141414;
+}
+
+.NavBarP-Logo {
+    left: 0;
+    width: 30%;
+    font-family: 'OswaldRegular';
+}
+
+.NavBarP-Nav {
+    right: 0;
+    width: 70%;
+}
+
+.NavBarP-Nav>ul {
+    text-align: right;
+    padding-right: 10px;
+}
+
+.NavBarP-Nav>ul>li {
+    display: inline-block;
+    position: relative;
+}
+
+.NavBarP-Nav>ul>li>a {
+    color: #fff;
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    padding: 0 7px;
+    transition: all .3s ease-in-out;
+}
+
+.NavBarP-Nav>ul>li>a:hover {
+    color: #FAE76F;
+}
+
+/*====== Login ==*/
+.Login {
+    right: 0;
+    z-index: 77;
+    background: #fff;
+    color: #141414;
+    text-transform: none;
+    line-height: normal;
+    padding: 7px;
+    text-align: left;
+    font-size: 14px;
+    transition: all .3s ease-in-out;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.Login a {
+    text-decoration: none;
+    line-height: auto;
+    text-align: center;
+    display: block;
+}
+
+.banner {
+    position: relative;
+    width: 100%;
+    height: calc(100vh - 50px);
+    background-color: #F5F5F5;
+    background-size: cover;
+    background-position: center;
+    transition: all .1s ease-out;
+    background-image: url('../');
+    animation: banner 28s infinite linear;
+}
+
+.banner-content {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    color: #FFF;
+    background-color: rgba(0, 22, 40, .6);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-content h1 {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 30px;
+    font-size: 40px;
+    text-align: center;
+}
+
+.banner-content a {
+    text-decoration: none;
+    color: #FFF;
+    padding: 9px 20px;
+    border: 1px solid #FFF;
+    text-transform: uppercase;
+    transition: all .3s ease-in-out;
+
+}
+
+.banner-content a:hover {
+    background-color: #fff;
+    color: #333;
+}
+
+.tittle {
+    font-family: 'Dela Gothic One',
+    cursive;
+    text-shadow: 1px 1px 0px #ffffff,
+    -1px -1px 3px #7a36e2;
+    
+
+}
+.subtittle{
+    font-family: 'Dela Gothic One',
+    cursive;
+    
+}
+
+@keyframes banner {
+    0% {
+        background-image: url('../public/img/929254.png');
+    }
+
+    25% {
+        background-image: url('../public/img/Destiny-2-Season-of-the-Splicer-Wallpaper-scaled.jpg');
+    }
+
+
+    
+
+    50% {
+        background-image: url('../public/img/solstice_of_heroes_media_wallpaper_1-scaled.jpg');
+    }
+
+
+    
+
+    75% {
+        background-image: url('../public/img/solstice_of_heroes_media_wallpaper_1-scaled.jpg');
+    }
+
+
+
+
+    100% {
+        background-image: url('../public/img/wallpapersden.com_destiny-2-stasis_1920x1080.jpg');
+    }
+}
+
+/* === PRODUTOS === */
+.subheader{
+    background-color: #7a36e2;
+    text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.45);
+    font-family: 'Dela Gothic One',
+    cursive;
+
+
+}
+
+.checked {
+    color: orange;
+    
+}
