@@ -18,13 +18,13 @@ class Header extends React.Component{
         return(
             <header>
         <div class="logo">
-            <a href="../public/index.html" class="logo nav-link">
+            <a href="../index.html" class="logo nav-link">
                 <img class="logoC" src="../public/img/destiny-2.png" alt="logotipo" />
             </a>
         </div>
         <nav id="menu">
             <ul>
-                <li><a href="../public/index.html">Inicio</a></li>
+                <li><a href="../index.html">Inicio</a></li>
                 <li><a href="../public/products.html">Productos</a></li>
                 <li><a href="#Seccion2">About</a></li> 
                 
